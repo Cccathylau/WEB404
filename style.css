@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'iconfont';  /* Project id 2706294 */
+    src: url('//at.alicdn.com/t/font_2706294_fi4qqk8ify.woff2?t=1627457825977') format('woff2'),
+         url('//at.alicdn.com/t/font_2706294_fi4qqk8ify.woff?t=1627457825977') format('woff'),
+         url('//at.alicdn.com/t/font_2706294_fi4qqk8ify.ttf?t=1627457825977') format('truetype');
+  }
+  @font-face {
+    font-family: 'iconfont';  /* Project id 2718384 */
+    src: url('//at.alicdn.com/t/font_2718384_8nn5zihwk2.woff2?t=1628648320659') format('woff2'),
+         url('//at.alicdn.com/t/font_2718384_8nn5zihwk2.woff?t=1628648320659') format('woff'),
+         url('//at.alicdn.com/t/font_2718384_8nn5zihwk2.ttf?t=1628648320659') format('truetype');
+  }
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* .bg-primary{
+    background-color: red !important;
+} */
+#app{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+#volumeup{
+    position: absolute;
+    height: 6vh;
+    top: 165px;
+    left: 537px;
+    width: 0.25vw;
+    background-color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#volumedown{
+    position: absolute;
+    height: 6vh;
+    top: 230px;
+    left: 537px;
+    width: 0.25vw;
+    background-color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.start-50{
+    cursor: pointer;
+}
+#topBar{
+    position: absolute;
+    height: 0.5vh;
+    top: 80px;
+    left: 690px;
+    width: 4vw;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 111;
+}
+#phoneBox{
+    position: absolute;
+    height: 85vh;  
+    top: 50px; 
+    background-color: black;
+    border-radius: 30px;
+}
+
+#phone{
+/* position:absolute; */
+position: relative;
+height:70vh;
+/* top: 82px; */
+border-style: solid;
+border-color: black;
+border-width: thin;
+overflow: hidden;
+}
+#phone .row{
+    position: relative;
+    /* z-index: -1; */
+}
+#phone canvas{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+#phoneCanvasBox{
+    position: relative;
+    z-index: 8;
+}
+.btn-group{
+    z-index: 9;
+}
+#sendBtn{
+    position: absolute;
+    right: 40px;
+    bottom: 80px;
+}
+#phonePost{
+    position: relative;
+}
+.post-box li{
+    list-style: none;
+}
+
+.grid{
+    transition: 0.3s ease;
+}
+
+#title{
+    word-wrap: break-word;
+    /* left: 20px; */
+}
+#logo.hover{
+    cursor: pointer;
+}
+/* .introLayer{
+    position: absolute;
+    z-index: 100;
+    display: none;
+    background: #000;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+.introWindow{
+    position: absolute;
+    display: none;
+    z-index: 101;
+} */
+/* #intro{
+    position: fixed;
+    height: 40vh;
+    width: 50vw;
+    top: 150px;
+    z-index: 99;
+} */
+
+#report{
+    position: fixed;
+    height: 50vh;
+    width: 50vw;
+    top: 130px;
+    border-style: solid;
+    transition: 0.5s ease; 
+    z-index: 10;
+}
+.report-show{
+    transform: scale(1.25) !important;
+}
+
+
+.btn-close{
+    left: 300px;
+}
+h1#data{
+    font-size: 150px;
+    left: 70px;
+    top: 160px;
+    overflow: hidden;
+}
+#db{
+   position:fixed;
+   width: 25vw; 
+   height:100vh;
+   right: 0;
+   top: 0;
+   transform: translateX(50vw);
+   transition: 0.7s ease;
+}
+.db-show{
+    transform: translateX(0vw) !important;
+}
+
+
+
+.positive{
+    background-color: #089A86 !important;
+    cursor: pointer;
+
+    /* background-color:rgb(255, 230, 0) !important; */
+}
+
+.negative{
+    background-color: #17175E !important;
+    cursor: pointer;
+
+    /* background-color:rgb(27, 40, 228) !important; */
+}
+
+.aggressive{
+    background-color: #E82B47 !important;
+    cursor: pointer;
+
+    /* background-color:red !important; */
+}
+
+.neutral{
+    background-color: #F7943D !important;
+    cursor: pointer;
+
+    /* background-color:rgb(122, 122, 122) !important; */
+}
+
+#bgCircle{
+    position: absolute;
+    width: 140vw;
+    height: 100vw;
+    background: #FFFFFF;
+background: -webkit-linear-gradient(top, #FFFFFF, #FFEFD2);
+background: -moz-linear-gradient(top, #FFFFFF, #FFEFD2);
+background: linear-gradient(to bottom, #FFFFFF, #FFEFD2);
+    /* background: #FFFFFF;
+background: -webkit-linear-gradient(top, #FFFFFF, #81FB9E);
+background: -moz-linear-gradient(top, #FFFFFF, #81FB9E);
+background: linear-gradient(to bottom, #FFFFFF, #81FB9E); */
+    border-radius: 200vw;
+    bottom: -100vh;
+    left: -20vw;
+    z-index: -1;
+}
